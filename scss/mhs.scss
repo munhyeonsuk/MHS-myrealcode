@@ -1,0 +1,134 @@
+$mainColor : #FFEBB7;
+$subColorBlue : #B5E1F9;
+$subColorPurple : #D1CFFF;
+$subColorPink : #F9D6D6;
+$subColorGreen : #85BD91;
+$subColorSoftBlue : #CDE6F9;
+$pointColorPink : #FF7682;
+$pointColorOrange : #FF9268;
+$pointColorPurple : #A374C8;
+$pointColorGreen : #8AE89F;
+$pointColorBlue : #77C5FF;
+$fontColorBlack : #333333;
+$fontColorGray : #989797;
+$fontColorSoftGray : #F2F2F2;
+$fontColorDarkBeige : #B2A569;
+
+body li{
+    list-style: none;
+}
+
+#sns .colorchange{
+    color: $fontColorDarkBeige;
+}
+
+#sns .bg {
+    background-color: black;
+    color: white;
+    
+}
+
+#sns {
+    .snsImg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        &::after {
+            content: "";
+            background: url(../img/instagram2.svg) no-repeat;
+            width: 13px;
+            height: 13px;
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+} 
+#sns .custom-strong{
+   display: flex;
+   background-color: black;
+   color: white;
+   border-radius: 30px;
+   width: 97px;
+   height: 37px;
+   align-items: center;
+   justify-content: center;
+
+}
+
+
+#event{
+    margin-bottom: 150px;
+}
+
+#event .titleArea h2{
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -6%;
+}
+#event .titleArea p{
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -10%;
+}
+#event .titleArea a{
+    text-decoration: none;
+    color: white;
+    background: black;
+    border-radius:20px;
+    width: 94px;
+    height: 38px;
+}
+
+#event .eventImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+}
+
+
+#event .h3{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -10%;
+
+}
+#event .des{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -10%;
+}
+#event .size{
+    width: 308px;
+ }
+
+ #event .size .img{
+    width: 308px;
+    height: auto;
+ }
+#event .border{
+    border-radius: 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#event .titleArea:before{
+    content:"";
+    display:block;
+    position:absolute;
+    top:-2rem;
+    left:-2rem;
+    right:-6rem;
+    bottom:-2rem;
+    background-color: $mainColor;
+}
+
+#event .titleArea h2, p, a, .order {
+    position: relative;
+    z-index: 2;
+}
