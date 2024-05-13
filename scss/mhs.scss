@@ -18,6 +18,32 @@ body li{
     list-style: none;
 }
 
+
+#hd{
+    .container{
+        max-width: 1440px;
+        margin: 0 auto;
+        padding:22px 0;
+            .gnb li{
+                margin-right: 3rem;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            .utill li{
+                margin-left: 1rem;
+                span{
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        display: block;
+                        overflow: hidden;
+                        opacity: 0;
+                }
+            }
+    }
+}
+
+
 #sns .colorchange{
     color: $fontColorDarkBeige;
 }
@@ -140,3 +166,8 @@ body li{
     font-size: 20px;
     letter-spacing: -10%;
 }
+
+#ft{
+    max-width: 1440px;
+    margin: 0 auto;
+    }
