@@ -24,6 +24,10 @@ body li{
         max-width: 1440px;
         margin: 0 auto;
         padding:22px 0;
+        h1,
+        .utill{
+            width: 0;
+        }
             .gnb li{
                 margin-right: 3rem;
                 font-size: 18px;
@@ -98,6 +102,16 @@ body li{
 #event{
     margin-bottom: 150px;
         .titleArea{
+            &:before{
+                content:"";
+                display:block;
+                position:absolute;
+                top:-2rem;
+                left:-2rem;
+                right:-6rem;
+                bottom:-2rem;
+                background-color: $mainColor;
+            }
             h2{
                 font-weight: 700;
                 font-size: 30px;
@@ -150,18 +164,6 @@ body li{
     }     
 }
 
-
-#event .titleArea:before{
-    content:"";
-    display:block;
-    position:absolute;
-    top:-2rem;
-    left:-2rem;
-    right:-6rem;
-    bottom:-2rem;
-    background-color: $mainColor;
-}
-
 #event .titleArea h2, p, a, .order {
     position: relative;
     z-index: 2;
@@ -169,15 +171,24 @@ body li{
 
 
 #ft{
-    max-width: 1440px;
     margin: 0 auto;
     background-color:$mainColor ;
-    .container{
+    .footerMenu{
         margin: 0;
         padding: 0;
         margin-bottom: 1rem;
         li{
             margin-left: 1rem;
+        }
+        .footerIcon{
+            span{
+                position: absolute;
+                width: 0;
+                height: 0;
+                display: block;
+                overflow: hidden;
+                opacity: 0;
+        }
         }
         .verticalLine{
             margin-left: 1rem;
@@ -204,16 +215,19 @@ body li{
         margin-bottom: 1rem;
         li{
             margin-right: 2rem;
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 600;
         }
        
     }
     p{
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 400;
     }
     }
+
+
+
 #quick{
     position: fixed;
     right: 0;
