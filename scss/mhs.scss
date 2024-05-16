@@ -20,18 +20,48 @@ body li{
 
 
 #hd{
-    .container{
-        max-width: 1440px;
-        margin: 0 auto;
-        padding:22px 0;
         h1,
         .utill{
             width: 0;
         }
-            .gnb li{
-                margin-right: 3rem;
-                font-size: 18px;
-                font-weight: 700;
+
+            .gnb {
+                &:hover{
+                    ul{
+                        max-height: 180px !important;
+                        
+                    }
+                }
+                .d1{
+                    .gnb_d1_a{//대메뉴
+                        font-size: 1.2em;
+                        font-weight: 700;
+                        }
+                    ul{//소메뉴
+                        min-width: 80px;
+                        white-space: nowrap;
+                        color: $fontColorBlack;
+                        max-height: 0;
+                        transition: max-height 0.5s;
+                        overflow: hidden;
+                        font-size: 15px;
+                        font-weight: 400;
+                        text-align: center;
+                        left: 0;
+                        right: 0;
+                        li {
+                            line-height: 2;
+                        }
+                        li:hover{
+                            a {
+                                border-bottom: 1px $fontColorBlack solid;
+                                font-weight: 700;
+                            }
+
+                        }
+                    }
+                }
+                        
             }
             .utill li{
                 margin-left: 1rem;
@@ -45,7 +75,7 @@ body li{
                 }
             }
     }
-}
+
 
 
 #sns .colorchange{

@@ -2,20 +2,41 @@ body li {
   list-style: none;
 }
 
-#hd .container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 22px 0;
+#hd h1,
+#hd .utill {
+  width: 0;
 }
-#hd .container .gnb li {
-  margin-right: 3rem;
-  font-size: 18px;
+#hd .gnb:hover ul {
+  max-height: 180px !important;
+}
+#hd .gnb .d1 .gnb_d1_a {
+  font-size: 1.2em;
   font-weight: 700;
 }
-#hd .container .utill li {
+#hd .gnb .d1 ul {
+  min-width: 80px;
+  white-space: nowrap;
+  color: #333333;
+  max-height: 0;
+  transition: max-height 0.5s;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+#hd .gnb .d1 ul li {
+  line-height: 2;
+}
+#hd .gnb .d1 ul li:hover a {
+  border-bottom: 1px #333333 solid;
+  font-weight: 700;
+}
+#hd .utill li {
   margin-left: 1rem;
 }
-#hd .container .utill li span {
+#hd .utill li span {
   position: absolute;
   width: 0;
   height: 0;
