@@ -19,21 +19,39 @@ body li{
 }
 
 
+
 #hd{
+    
         h1,
         .utill{
             width: 0;
         }
 
             .gnb {
-                &:hover{
-                    ul{
-                        max-height: 180px !important;
-                        
-                    }
+                position: relative;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    top:100%;
+                    height:0;
+                    left: 0;
+                    right: 0;
+                    transition: 0.5s;
+                    background-color: $mainColor;
+                    min-width: 80px;
+                    border-radius: 20px;
                 }
-                .d1{
-                    .gnb_d1_a{//대메뉴
+                &:hover{
+                    &:before,
+                    ul{
+                        height: 180px !important;
+                    
+                    }
+
+                }
+                .gnb_li{
+                      
+                    .gnb_a{//대메뉴
                         font-size: 1.2em;
                         font-weight: 700;
                         }
@@ -41,16 +59,28 @@ body li{
                         min-width: 80px;
                         white-space: nowrap;
                         color: $fontColorBlack;
-                        max-height: 0;
-                        transition: max-height 0.5s;
+                        height: 0;
+                        transition: 0.5s;
                         overflow: hidden;
                         font-size: 15px;
                         font-weight: 400;
                         text-align: center;
                         left: 0;
                         right: 0;
+                        
+
+                        &:after,
+                        &:before{
+                            content: "";
+                            display: block;
+                            height: 1rem;
+                        }
+
+
                         li {
                             line-height: 2;
+
+                            
                         }
                         li:hover{
                             a {
@@ -76,6 +106,19 @@ body li{
             }
     }
 
+  
+            .utill li{
+                margin-left: 1rem;
+                span{
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        display: block;
+                        overflow: hidden;
+                        opacity: 0;
+                }
+            }
+        
 
 
 #sns .colorchange{
@@ -269,26 +312,10 @@ body li{
     bottom: 0;
     li{
         margin-bottom: 0.5rem;
-        .aitrip{
-            position: relative;
-        }
-        .aitrip::after {
-            content: "AI TRIP PLANNER";
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 14px;
-            color:white;
-            background-color: black;
-            border-radius: 10%;
-            font-size: 13px;
-            font-weight: 700;
-            margin-top: 1rem;
-            display: none; 
-    }
-    .aitrip:hover::after {
-        display: block; 
-    }
+       .aitrip{
+        
+       }
     }
 }
+
+
