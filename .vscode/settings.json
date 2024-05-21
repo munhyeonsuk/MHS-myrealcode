@@ -1,3 +1,20 @@
 {
-    "liveSassCompile.settings.autoprefix": []
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "css",
+            "savePathReplacementPairs": null
+        },
+
+        {
+            "format": "expanded",
+            "extensionName": ".min.css",
+            "savePath": "css",
+            "savePathReplacementPairs": null
+        },
+    ],
+    "liveSassCompile.settings.generateMap": false,
+
 }

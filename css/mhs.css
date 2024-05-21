@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body li {
   list-style: none;
 }
@@ -65,6 +66,29 @@ body li {
   overflow: hidden;
   opacity: 0;
 }
+#hd .searchMenu {
+  position: absolute;
+  min-width: 285px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #FFEBB7;
+  border-radius: 15px;
+  right: 0;
+  height: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+#hd .searchMenu .dropdownbox {
+  border: 1px solid #ccc;
+  padding: 25px;
+  border-radius: 15px;
+}
+#hd .searchLi:hover .searchMenu {
+  height: 190px !important;
+}
+
 #sns .colorchange {
   color: #B2A569;
 }
@@ -97,7 +121,8 @@ body li {
 #sns .snsImg img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 
@@ -154,7 +179,8 @@ body li {
 #event .thumbList .eventImg {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #event .thumbList .des {
   font-weight: 500;
@@ -202,15 +228,48 @@ body li {
   height: 15px;
   background-color: black;
 }
-#ft .footerMenu button {
-  margin-left: 1rem;
+#ft .footerMenu .language-selector {
+  position: relative;
+  display: inline-block;
 }
-#ft .footerMenu button ul {
-  margin: 0;
-  padding: 0;
+#ft .footerMenu .language-selector .language-button {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
 }
-#ft .footerMenu button ul span {
-  color: white;
+#ft .footerMenu .language-selector .language-button i {
+  margin-right: 10px;
+}
+#ft .footerMenu .language-selector .language-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1000;
+}
+#ft .footerMenu .language-selector .language-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  list-style: none;
+}
+#ft .footerMenu .language-selector .language-menu li:hover, #ft .footerMenu .language-selector .language-menu li.active {
+  background-color: #f8f9fa;
+}
+#ft .footerMenu .language-selector .language-menu li.active {
+  color: #007bff;
+}
+#ft .footerMenu .language-selector .language-menu li.active::after {
+  content: "✔";
+  float: right;
+  color: #007bff;
 }
 #ft .fnb {
   margin: 0;
@@ -237,6 +296,13 @@ body li {
   top: 0;
   bottom: 0;
 }
-#quick li {
-  margin-bottom: 0.5rem;
+#quick li:hover span {
+  display: block;
+}
+#quick li span {
+  display: none;
+  border-radius: 10px;
+  white-space: nowrap;
+  background-color: #000;
+  color: white;
 }
