@@ -315,6 +315,10 @@ body li{
                 border-radius: 10px;
                 overflow: hidden;
                 z-index: 1000;
+                width: 120px;
+                transform: translateX(5px);
+                font-size: 14px;
+                font-weight: 400;
 
                 li{
                     padding: 10px 20px;
@@ -324,17 +328,17 @@ body li{
 
             }
             .language-menu li:hover, .language-menu li.active {
-                background-color: #f8f9fa;
+                background-color: white;
               }
           
               .language-menu li.active {
-                color: #007bff;
+                color: #379CEE;
               }
           
               .language-menu li.active::after {
-                content: '✔';
+                content: url(/img/ftCheck2.svg);
                 float: right;
-                color: #007bff;
+                color: #379CEE;
               }
         }
 

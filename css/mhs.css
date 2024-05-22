@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body li {
   list-style: none;
 }
@@ -257,6 +256,10 @@ body li {
   border-radius: 10px;
   overflow: hidden;
   z-index: 1000;
+  width: 120px;
+  transform: translateX(5px);
+  font-size: 14px;
+  font-weight: 400;
 }
 #ft .footerMenu .language-selector .language-menu li {
   padding: 10px 20px;
@@ -264,15 +267,15 @@ body li {
   list-style: none;
 }
 #ft .footerMenu .language-selector .language-menu li:hover, #ft .footerMenu .language-selector .language-menu li.active {
-  background-color: #f8f9fa;
+  background-color: white;
 }
 #ft .footerMenu .language-selector .language-menu li.active {
-  color: #007bff;
+  color: #379CEE;
 }
 #ft .footerMenu .language-selector .language-menu li.active::after {
-  content: "✔";
+  content: url(/img/ftCheck2.svg);
   float: right;
-  color: #007bff;
+  color: #379CEE;
 }
 #ft .fnb {
   margin: 0;
