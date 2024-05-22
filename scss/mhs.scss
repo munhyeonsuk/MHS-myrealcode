@@ -21,7 +21,7 @@ body li{
 
 
 #hd{
-    
+    background-color: $mainColor !important;
         h1,
         .utill{
             width: 0;
@@ -37,7 +37,7 @@ body li{
                     left: 0;
                     right: 0;
                     transition: 0.5s;
-                    background-color: $mainColor;
+                    background-color: white;
                     min-width: 80px;
                     border-radius: 20px;
                 }
@@ -112,16 +112,16 @@ body li{
                 overflow: hidden;
                 font-size: 14px;
                 font-weight: 400;
-                background-color: $mainColor;
+                background-color: white;
                 border-radius: 15px;
                 right: 0;
                 height: 0;
                 font-size: 14px;
                 font-weight: 400;
+                transform: translateY(-25%) translateX(5%);
                 .dropdownbox {
                     border:1px solid #ccc;
                     padding: 25px;
-                    border-radius: 15px;   
                 }
 
 
@@ -372,7 +372,7 @@ body li{
 
 #quick{
     position: fixed;
-    right: 0;
+    right: 5%;
     width: 80px;
     display: flex;
     flex-direction: column;
@@ -380,6 +380,7 @@ body li{
     top: 0;
     bottom: 0;
     li{
+        padding: 5px 0;
         &:hover{
             span{
                 display: block;
@@ -388,11 +389,29 @@ body li{
        
         span{
             display: none;
-            border-radius: 10px;
+            border-radius: 20px;
             white-space: nowrap;
             background-color: #000;
             color: white;
+            padding: 5px 10px;
+            right: -20px;
+            
           
+            &::after {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-left: 12px solid #000;
+                position: absolute;
+                top: 50%;
+                right: 30px;
+                transform: translateY(-150%) rotate(-90deg) translateX(-2px);
+                
+            
+            }
         }
     }
 }
