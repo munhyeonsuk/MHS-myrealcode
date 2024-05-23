@@ -21,7 +21,7 @@ body li{
 
 
 #hd{
-    background-color: $mainColor !important;
+    background-color: transparent !important;
         h1,
         .utill{
             width: 0;
@@ -95,14 +95,12 @@ body li{
             }
             .utill li{
                 margin-left: 1rem;
-                span{
-                        position: absolute;
-                        width: 0;
-                        height: 0;
-                        display: block;
-                        overflow: hidden;
-                        opacity: 0;
+                .searchIcon{
+                    span{
+                       
                 }
+                }
+                
             }
               
             .searchMenu{
@@ -118,10 +116,15 @@ body li{
                 height: 0;
                 font-size: 14px;
                 font-weight: 400;
-                transform: translateY(-25%) translateX(5%);
+                transform: translateY(-25%) translateX(9%);
                 .dropdownbox {
                     border:1px solid #ccc;
                     padding: 25px;
+                    .searchPopular{
+                        border-top: 0.5px solid black;
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
                 }
 
 
@@ -265,7 +268,7 @@ body li{
 
 
 #ft{
-    margin: 0 auto;
+    margin:0 auto;
     background-color:$mainColor ;
     .footerMenu{
         margin: 0;
@@ -294,11 +297,12 @@ body li{
             position: relative;
             display: inline-block;
             .language-button{
+                width: 107px;
                 display: flex;
                 align-items: center;
                 background-color: #000;
                 color: #fff;
-                padding: 10px 20px;
+                padding: 5px 10px;
                 border-radius: 25px;
                 cursor: pointer;
                 i{
@@ -315,10 +319,11 @@ body li{
                 border-radius: 10px;
                 overflow: hidden;
                 z-index: 1000;
-                width: 120px;
-                transform: translateX(5px);
+                width: 100px;
+                transform: translateX(10px) translateY(-10px);
                 font-size: 14px;
                 font-weight: 400;
+                border: 0.5px solid #999999 ;
 
                 li{
                     padding: 10px 20px;
@@ -342,18 +347,6 @@ body li{
               }
         }
 
-
-
-        // button{
-        //     margin-left: 1rem;
-        //     ul{
-        //        margin: 0;
-        //        padding: 0;
-        //         span{
-        //             color: white;
-        //         }
-        //     }
-        // }
     }
     .fnb{
         margin: 0;
@@ -374,50 +367,57 @@ body li{
 
 
 
-#quick{
-    position: fixed;
-    right: 5%;
-    width: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    top: 0;
-    bottom: 0;
-    li{
-        padding: 5px 0;
-        &:hover{
-            span{
-                display: block;
+    #quick{
+        position: fixed;
+        right: 5%;
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        bottom: 0;
+        li{
+            &.questionIcon{
+                background-color: white;
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                overflow: hidden;
             }
-        }
-       
-        span{
-            display: none;
-            border-radius: 20px;
-            white-space: nowrap;
-            background-color: #000;
-            color: white;
-            padding: 5px 10px;
-            right: -20px;
-            
-          
-            &::after {
-                content: "";
-                display: block;
-                width: 0;
-                height: 0;
-                border-top: 10px solid transparent;
-                border-bottom: 10px solid transparent;
-                border-left: 12px solid #000;
-                position: absolute;
-                top: 50%;
-                right: 30px;
-                transform: translateY(-150%) rotate(-90deg) translateX(-2px);
+            margin: 8px 0;
+            &:hover{
+                span{
+                    display: block;
+                }
+            }
+           
+            span{
+                display: none;
+                border-radius: 20px;
+                white-space: nowrap;
+                background-color: #000;
+                color: white;
+                padding: 5px 10px;
+                right: -20px;
                 
-            
+              
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-top: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    border-left: 12px solid #000;
+                    position: absolute;
+                    top: 50%;
+                    right: 30px;
+                    transform: translateY(-150%) rotate(-90deg) translateX(-2px);
+                    
+                
+                }
             }
         }
     }
-}
 
 
