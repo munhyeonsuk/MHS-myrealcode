@@ -1,0 +1,74 @@
+#recommend .recommendContainerJ {
+  background-color: #FFEBB7;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  height: 550px;
+}
+#recommend .recommendContainerJ .recommendBigboxJ {
+  margin-top: 41px;
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ:nth-child(5) .recommendCardJ {
+  border-radius: 160px 160px 0 0;
+  border: 15px solid white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translateY(-31.5%);
+  border-width: 22px 22px 0 22px;
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ:nth-child(5) .recommendCardJ img {
+  width: 280px;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ:nth-child(5) .recommendCardJ img + div {
+  display: none !important;
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ:nth-child(5) .recommendCardJ p {
+  height: 96px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ .recommendCardJ {
+  overflow: hidden;
+  border-radius: 160px 160px 0 0;
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ .recommendCardJ img {
+  width: 245px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ .recommendCardJ img + div {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ .recommendCardJ .recommendTextNoneJ {
+  display: none !important;
+}
+#recommend h2 {
+  font-weight: bold;
+  margin-top: 5rem;
+}
+#recommend .recommendTextJ {
+  font-size: 20px;
+  font-weight: 400px;
+}
+#recommend .recommendLineJ {
+  width: 900px;
+  border: 1px solid #989797;
+  margin-top: 9rem;
+  position: relative;
+}
+#recommend .recommendLineJ:before {
+  content: "";
+  width: 450px;
+  border: 1px solid #333333;
+  margin-top: 9rem;
+  position: absolute;
+  top: -145px;
+  left: 225px;
+}
+#recommend div .recommendSlideBtnJ {
+  margin-top: 8.5rem;
+  margin-left: 3rem;
+}

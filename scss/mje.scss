@@ -1,0 +1,95 @@
+#recommend{
+    .recommendContainerJ{
+        background-color: #FFEBB7;
+        max-width: 1920px;
+        width: 100%;
+        margin: 0 auto;
+        height: 550px;
+        .recommendBigboxJ{
+            // transform: translateY(53px);
+            margin-top: 41px;
+            
+            .recommendBoxJ{
+                &:nth-child(5){
+                    .recommendCardJ{
+                        border-radius: 160px 160px 0 0;
+                        border: 15px solid white;
+                        box-shadow: 0 4px 4px rgba(0,0,0,.25);
+                        transform: translateY(-31.5%);
+                        border-width: 22px 22px 0 22px;
+                        img{
+                            width: 280px;
+                            height: 320px;
+                            object-fit: cover;
+                            + div{
+                                display: none !important;
+                            }
+                        }
+                        p{
+                            height: 96px;
+                            font-size: 1rem;
+                            font-weight: 600;
+                            
+                        
+                        }
+                        
+                    }
+                }
+                .recommendCardJ{
+                    overflow: hidden;
+                    border-radius: 160px 160px 0 0;
+                    img{
+                        width: 245px;
+                        height: 300px;
+                        object-fit: cover;
+                        + div{
+                            background-color: rgba(0,0,0,0.3);
+                        }
+                    }
+                    .recommendTextNoneJ{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+        
+    }
+    h2{
+        font-weight: bold;
+        margin-top: 5rem;
+    }
+    .recommendTextJ{
+        font-size: 20px;
+        font-weight: 400px;
+    }
+    
+    .recommendLineJ{
+        width: 900px;
+        border: 1px solid #989797;
+        margin-top: 9rem;
+        position: relative;
+        &:before{
+            content: "";
+            width: 450px;
+            border: 1px solid #333333;
+            margin-top: 9rem;
+            position: absolute;
+            top: -145px;
+            left: 225px;
+        }
+    }
+
+    
+    div{
+        .recommendSlideBtnJ{
+            
+            margin-top: 8.5rem;
+            margin-left: 3rem;
+        }
+    }
+    
+    
+    
+    
+    
+}
