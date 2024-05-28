@@ -88,22 +88,24 @@ body li {
   border: 1px solid #ccc;
 }
 
-#mainslider .mainSlidetext {
-  height: 800px;
-  width: 600px;
+#mainslider {
+  margin-top: 250px;
 }
-#mainslider .swiper .sliderPart {
-  height: 800px;
-  width: calc(50vh + 600px);
+#mainslider .wideWrap {
+  overflow: hidden;
+  height: 580px;
+  width: calc(50% + 300px);
 }
-#mainslider .swiper .sliderPart .swiper-slide {
+#mainslider .wideWrap .swiper .swiper-slide {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  border-radius: 50px;
+  overflow: hidden;
+  height: 580px;
 }
-#mainslider .swiper .swiper-slide img {
+#mainslider .wideWrap .swiper-slide img {
   display: block;
   width: 100%;
   -o-object-fit: cover;

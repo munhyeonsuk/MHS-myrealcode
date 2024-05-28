@@ -248,28 +248,36 @@
       </div>
     </section> -->
   
-    <section id="mainslider" class="d-flex justify-content-end ">
-        <div class="mainSlidetext">
-          <p class>경주의 계절 축제</p>
-          <strong>
-              경주의 계절<br>
-              봄날의 벚꽃 축제
-          </strong>
-          <a href="" class="text-with-underline d-block mt-3">자세히보기</a>
-    </div>
+    <section id="mainslider" class="d-flex justify-content-center w-100 overflow-hidden">
+        <div class="mainSlidetext flex-grow-1 d-flex justify-content-end align-items-center">
+          <div class="swiper ms-auto me-5 ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <p class>경주의 계절 축제</p>
+                  <strong>
+                      경주의 계절<br>
+                      봄날의 벚꽃 축제
+                  </strong>
+                  <a href="" class="text-with-underline d-block mt-3">자세히보기</a>
+              </div>
+            </div>
+          </div>        
+        </div>
 
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper sliderPart">
-        <div class="swiper-slide"><img src="./img/mainImg1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="./img/mainImg2.jpeg" alt=""></div>
-        <div class="swiper-slide"><img src="./img/mainImg3.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="./img/mainImg4.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="./img/mainImg5.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="./img/mainImg6.jpg" alt=""></div>
-      </div>
-
-      <div class="swiper-pagination"></div>
-    </div>
+        <div class="wideWrap ">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper sliderPart">
+                <div class="swiper-slide"><img src="./img/mainImg1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/mainImg2.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/mainImg3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/mainImg4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/mainImg5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/mainImg6.jpg" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+        </div>
+       
       </div>
     </section>
 
@@ -1019,7 +1027,7 @@
 
  <script>
   const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2,
+    slidesPerView: 1.2,
     spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",

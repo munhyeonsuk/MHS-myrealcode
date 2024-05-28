@@ -141,24 +141,25 @@ body li{
            
 
 #mainslider{
-
+    margin-top: 250px;
     .mainSlidetext{
-        height: 800px;
-        width: 600px;
+     
     }
-    .swiper {
-      
-        
-        .sliderPart{
-        height: 800px;
-        width: calc(50vh + 600px);
+   
+    .wideWrap{
+        overflow: hidden;
+        height: 580px;
+        width: calc(50% + 300px);
+        .swiper {
         
         .swiper-slide {
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;           
-            height: 100%; 
+            border-radius: 50px;
+            overflow: hidden;
+            height: 580px;
             }
         }
             
