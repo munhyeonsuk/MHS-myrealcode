@@ -21,7 +21,7 @@ body li{
 
 
 #hd{
-    background-color: transparent !important;
+    background-color: white !important;
         h1,
         .utill{
             width: 0;
@@ -139,8 +139,37 @@ body li{
 
 }
            
+
+#mainslider{
+
+    .mainSlidetext{
+        height: 800px;
+        width: 600px;
+    }
+    .swiper {
+      
         
-    
+        .sliderPart{
+        height: 800px;
+        width: calc(50vh + 600px);
+        
+        .swiper-slide {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;           
+            height: 100%; 
+            }
+        }
+            
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        
+        object-fit: cover;
+      }
+    }
+}
         
 
 #ft{

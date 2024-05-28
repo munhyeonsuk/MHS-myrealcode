@@ -137,7 +137,7 @@
     
      </header>
 
-    <section id="mainslider">
+    <!-- <section id="mainslider">
       <div class="d-flex flex-wrap">
         <div class="mainTextbox col-6 d-flex">
             <div class="mainSlidetext">
@@ -246,7 +246,34 @@
         </div>
           
       </div>
+    </section> -->
+  
+    <section id="mainslider" class="d-flex justify-content-end ">
+        <div class="mainSlidetext">
+          <p class>경주의 계절 축제</p>
+          <strong>
+              경주의 계절<br>
+              봄날의 벚꽃 축제
+          </strong>
+          <a href="" class="text-with-underline d-block mt-3">자세히보기</a>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper sliderPart">
+        <div class="swiper-slide"><img src="./img/mainImg1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/mainImg2.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/mainImg3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/mainImg4.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/mainImg5.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/mainImg6.jpg" alt=""></div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+      </div>
     </section>
+
+
 
     <section id="map">
       <div class="container-1400">
@@ -986,6 +1013,21 @@
             </div>
         </div>
     </footer>
+
+
+ <script src="//cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
 
     <script>
       document.getElementById("qna").addEventListener("click", function() {
