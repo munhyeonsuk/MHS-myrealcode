@@ -1,9 +1,9 @@
 const hd ={
-    logo : {},
     gnb : [
         {
         Text : "경주 소개",
         href : "intro.html",
+        cls : ["gnb_li px-5 position-relative py-3","gnb_a","gnb_ul position-absolute ps-0 pt-2"],
         gnb_ul_li : [
             {
                 Text : "역사 및 소개",
@@ -19,6 +19,7 @@ const hd ={
     {
         Text : "여행 정보",
         href : "tripInfo.html",
+        cls : ["gnb_li px-5 position-relative py-3","gnb_a","gnb_ul position-absolute ps-0 pt-2"],
         gnb_ul_li : [
             {
                 Text : "관광지",
@@ -46,6 +47,7 @@ const hd ={
     {
         Text : "예약 및 문의",
         href : "reser.html",
+        cls : ["gnb_li px-5 position-relative py-3","gnb_a","gnb_ul position-absolute ps-0 pt-2"],
         gnb_ul_li : [
             {
                 Text : "숙소 예약",
@@ -67,6 +69,7 @@ const hd ={
     },
     {
         Text : "이벤트",
+         cls : ["gnb_li px-5 position-relative py-3","gnb_a","gnb_ul position-absolute ps-0 pt-2"],
         href : "event.html",
         gnb_ul_li : [
             {
@@ -76,56 +79,53 @@ const hd ={
         ]
     }
     ],
-    util : [
+    searchMenu : [
         {
-            Text : "실시간인기"
-            [
+            Text : "실시간인기",
+            cls : ["dropdownbox m-0", "text-end pb-1", "", "searchPopular pt-2 mb-1 text-black-50", "searchTop10 d-flex", "ps-0","m-0"],
+            searchMenu_text : [
                 {
-                    Text : "관광지",
+                    Text : "1. 관광지",
                     href : "tour.html",
                 },
                 {
-                    Text : "카페",
+                    Text : "2. 카페",
                     href : "cafe.html",
                 },
                 {
-                    Text : "패키지 여행 예약",
+                    Text : "3. 패키지 여행 예약",
                     href : "package.html",
                 },
                 {
-                    Text : "추천 코스",
+                    Text : "4. 추천 코스",
                     href : "corse.html",
                 },
                 {
-                    Text : "맛집",
+                    Text : "5. 맛집",
                     href : "rest.html",
                 },
                 {
-                    Text : "황남빵",
+                    Text : "6. 황남빵",
                     href : "bread.html",
                 },
                 {
-                    Text : "경주월드",
+                    Text : "7. 경주월드",
                     href : "amuse.html",
                 },
                 {
-                    Text : "호텔",
+                    Text : "8. 호텔",
                     href : "hotel.html",
                 },
                 {
-                    Text : "한복 대여",
+                    Text : "9. 한복 대여",
                     href : "hanbok.html",
                 },
                 {
-                    Text : "야경",
+                    Text : "10. 야경",
                     href : "night.html",
                 }
             ]
         },
-        {
-            Text : "로그인",
-            href : "login.html",
-        }
     ]
 }
 
@@ -135,12 +135,12 @@ window.onload = function(){
     let navitag = "";
 
     for(x in hd.gnb){
-        navitag += `<li>
-        <a href='${hd.gnb[x].href}'>
+        navitag += `<li class="${hd.gnb[x].cls[0]}">
+        <a href='${hd.gnb[x].href}' class="${hd.gnb[x].cls[1]}">
         ${hd.gnb[x].Text}
         </a>`;
 
-        navitag += `<ul>`;
+        navitag += `<ul class="${hd.gnb[x].cls[2]}">`;
         for(j in hd.gnb[x].gnb_ul_li){
             navitag +=`<li>
             <a href='${hd.gnb[x].gnb_ul_li[j].href}'>
@@ -152,4 +152,7 @@ window.onload = function(){
         navitag += `</li>`
     }
     document.querySelector("#gnb").innerHTML = navitag;
+
+
+ 
 }

@@ -21,13 +21,13 @@ body li{
 
 
 #hd{
-    background-color: white !important;
+    background-color: transparent !important;
         h1,
         .utill{
             width: 0;
         }
 
-            .gnb {
+            #gnb {
                 position: relative;
                 &:before{
                     content: "";
@@ -55,7 +55,7 @@ body li{
                         font-size: 1.2em;
                         font-weight: 700;
                         }
-                    ul{//소메뉴
+                    .gnb_ul{//소메뉴
                         min-width: 80px;
                         white-space: nowrap;
                         color: $fontColorBlack;
@@ -103,7 +103,8 @@ body li{
                 
             }
               
-            .searchMenu{
+            #searchMenu{
+                display: none;
                 position: absolute;
                 min-width: 285px;
                 white-space: nowrap;
@@ -117,6 +118,8 @@ body li{
                 height: 0;
                 font-size: 14px;
                 font-weight: 400;
+                height: 184px !important;
+                border:1px solid #ccc;
                 .dropdownbox {                    
                     padding: 10px 20px 20px;
                     .searchPopular{
@@ -128,12 +131,12 @@ body li{
 
 
                 }
-            .searchLi:hover{                   
-                .searchMenu{
-                    height: 184px !important;
-                    border:1px solid #ccc;
-                }
-            }
+            // .searchLi:hover{                   
+            //     .searchMenu{
+            //         height: 184px !important;
+            //         border:1px solid #ccc;
+            //     }
+            // }
                 
 
 

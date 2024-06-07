@@ -3,16 +3,16 @@ body li {
 }
 
 #hd {
-  background-color: white !important;
+  background-color: transparent !important;
 }
 #hd h1,
 #hd .utill {
   width: 0;
 }
-#hd .gnb {
+#hd #gnb {
   position: relative;
 }
-#hd .gnb:before {
+#hd #gnb:before {
   content: "";
   position: absolute;
   top: 100%;
@@ -24,15 +24,15 @@ body li {
   min-width: 80px;
   border-radius: 20px;
 }
-#hd .gnb:hover:before,
-#hd .gnb:hover ul {
+#hd #gnb:hover:before,
+#hd #gnb:hover ul {
   height: 180px !important;
 }
-#hd .gnb .gnb_li .gnb_a {
+#hd #gnb .gnb_li .gnb_a {
   font-size: 1.2em;
   font-weight: 700;
 }
-#hd .gnb .gnb_li ul {
+#hd #gnb .gnb_li .gnb_ul {
   min-width: 80px;
   white-space: nowrap;
   color: #333333;
@@ -45,22 +45,23 @@ body li {
   left: 0;
   right: 0;
 }
-#hd .gnb .gnb_li ul:after, #hd .gnb .gnb_li ul:before {
+#hd #gnb .gnb_li .gnb_ul:after, #hd #gnb .gnb_li .gnb_ul:before {
   content: "";
   display: block;
   height: 1rem;
 }
-#hd .gnb .gnb_li ul li {
+#hd #gnb .gnb_li .gnb_ul li {
   line-height: 2;
 }
-#hd .gnb .gnb_li ul li:hover a {
+#hd #gnb .gnb_li .gnb_ul li:hover a {
   border-bottom: 1px #333333 solid;
   font-weight: 700;
 }
 #hd .utill li {
   margin-left: 1rem;
 }
-#hd .searchMenu {
+#hd #searchMenu {
+  display: none;
   position: absolute;
   min-width: 285px;
   white-space: nowrap;
@@ -74,18 +75,16 @@ body li {
   height: 0;
   font-size: 14px;
   font-weight: 400;
+  height: 184px !important;
+  border: 1px solid #ccc;
 }
-#hd .searchMenu .dropdownbox {
+#hd #searchMenu .dropdownbox {
   padding: 10px 20px 20px;
 }
-#hd .searchMenu .dropdownbox .searchPopular {
+#hd #searchMenu .dropdownbox .searchPopular {
   border-top: 0.5px solid black;
   font-weight: 500;
   font-size: 14px;
-}
-#hd .searchLi:hover .searchMenu {
-  height: 184px !important;
-  border: 1px solid #ccc;
 }
 
 #mainslider {
