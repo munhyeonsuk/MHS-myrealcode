@@ -78,54 +78,54 @@ const hd ={
             },
         ]
     }
-    ],
-    searchMenu : [
-        {
-            Text : "실시간인기",
-            cls : ["dropdownbox m-0", "text-end pb-1", "", "searchPopular pt-2 mb-1 text-black-50", "searchTop10 d-flex", "ps-0","m-0"],
-            searchMenu_text : [
-                {
-                    Text : "1. 관광지",
-                    href : "tour.html",
-                },
-                {
-                    Text : "2. 카페",
-                    href : "cafe.html",
-                },
-                {
-                    Text : "3. 패키지 여행 예약",
-                    href : "package.html",
-                },
-                {
-                    Text : "4. 추천 코스",
-                    href : "corse.html",
-                },
-                {
-                    Text : "5. 맛집",
-                    href : "rest.html",
-                },
-                {
-                    Text : "6. 황남빵",
-                    href : "bread.html",
-                },
-                {
-                    Text : "7. 경주월드",
-                    href : "amuse.html",
-                },
-                {
-                    Text : "8. 호텔",
-                    href : "hotel.html",
-                },
-                {
-                    Text : "9. 한복 대여",
-                    href : "hanbok.html",
-                },
-                {
-                    Text : "10. 야경",
-                    href : "night.html",
-                }
-            ]
-        },
+    // ],
+    // searchMenu : [
+    //     {
+    //         Text : "실시간인기",
+    //         cls : ["dropdownbox m-0", "text-end pb-1", "", "searchPopular pt-2 mb-1 text-black-50", "searchTop10 d-flex", "ps-0","m-0"],
+    //         searchMenu_text : [
+    //             {
+    //                 Text : "1. 관광지",
+    //                 href : "tour.html",
+    //             },
+    //             {
+    //                 Text : "2. 카페",
+    //                 href : "cafe.html",
+    //             },
+    //             {
+    //                 Text : "3. 패키지 여행 예약",
+    //                 href : "package.html",
+    //             },
+    //             {
+    //                 Text : "4. 추천 코스",
+    //                 href : "corse.html",
+    //             },
+    //             {
+    //                 Text : "5. 맛집",
+    //                 href : "rest.html",
+    //             },
+    //             {
+    //                 Text : "6. 황남빵",
+    //                 href : "bread.html",
+    //             },
+    //             {
+    //                 Text : "7. 경주월드",
+    //                 href : "amuse.html",
+    //             },
+    //             {
+    //                 Text : "8. 호텔",
+    //                 href : "hotel.html",
+    //             },
+    //             {
+    //                 Text : "9. 한복 대여",
+    //                 href : "hanbok.html",
+    //             },
+    //             {
+    //                 Text : "10. 야경",
+    //                 href : "night.html",
+    //             }
+    //         ]
+    //     },
     ]
 }
 
